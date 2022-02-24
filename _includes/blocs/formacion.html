@@ -1,0 +1,51 @@
+
+
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "" %}
+{% assign entryArray = entryArray | push: "" %}
+
+{%
+    include titular.html 
+    title="Mi Formación"
+    subtitle="Mi Formación"
+    entry2=entryArray   
+%}
+{% include blocktextdata.html 
+    ocupacion="Ciclo Formativo de Grado Superior" 
+    fechas="2013 - 2015" 
+    empresa="Desarrollo de Aplicaciones Web (DAW)"
+    functiones="
+        IES Thos I Codina<br/>
+        Mataró (Barcelona) 
+    "
+%}
+{% include blocktextdata.html 
+    ocupacion="Grado Universitario" 
+    fechas="2008 - 2013" 
+    empresa="Grado en Ciencias y Tecnologías de la Edificación (Arquitectura Técnica)"
+    functiones="
+        EPSEB (UPC)<br/>
+        Barcelona 
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Ciclo Formativo de Grado Superior" 
+    fechas="2005 - 2007" 
+    empresa="Aplicación y Desarrollo de Proyectos de Edificación"
+    functiones="
+        IES Miquel Biada<br/>
+        Mataró (Barcelona) 
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Formación Medio - +Superior" 
+    fechas="2005 - 2007" 
+    empresa="Bachillerato Tecnológico"
+    functiones="
+        IES Alexandre Satorras<br/>
+        Mataró (Barcelona) 
+    "
+%}
+

@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>{{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    {% include blocs/email.html %}
+    {% include blocs/menu.html %}
+    <section>
+        <header>
+            {%
+            include hero.html
+            imagetitlealt=page.imagetitlealt
+            imagetitle=page.imagetitle
+            subtitlepage=page.subtitlepage
+            titlepage=page.titlepage
+            %}
+        </header>
+
+        <main id="main" class="body">
+            <div class=" container container border-bottom">
+                {% include /blocs/sobremi.html %}
+                <ul class="menu-anchors">
+                    <li><a class="button" href="#experiencia">Experiencia</a></li>
+                    <li><a class="button"  href="#formacion">Formación</a></li>
+                    <li><a class="button"  href="#concimiento">Conocimiento</a></li>
+                    <li><a class="button"  href="#investigacion">Investigación</a></li>
+                </ul>         
+                
+            </div>
+            <div id="experiencia" class=" border-bottom separator container">
+                {% include /blocs/experiencia.html %}
+            </div>
+            <div id="formacion" class=" border-bottom separator container">
+                {% include /blocs/formacion.html %}
+            </div>
+            <div id="concimiento" class=" border-bottom separator container">
+                {% include /blocs/conocimiento.html %}
+            </div>
+            <div id="investigacion" class=" border-bottom separator container">
+                {% include /blocs/aficionesrelacionadas.html %}
+            </div>
+        </main>
+    </section>
+
+
+    <script src="/js/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', '/js/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+     <script>
+        function openMenu() {
+            var body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+
+</html>

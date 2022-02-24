@@ -1,0 +1,18 @@
+<div class="card-imglead">
+    <div data-cue="slideInLeft">
+        <img src="{{include.img}}" alt="{include.alt}"  />
+    </div>
+    <div class="lead mb-0" data-cue="fadeIn">
+        <h3 class="mb-15 color-third">{{include.title}}</h3>
+        {% if include.text %}
+        <p>{{include.text}}</p>
+        {% endif %} 
+        {% if include.textarray %}
+            {% for thing in include.textarray %}
+                <p class="mb-0"> {{thing}} </p>
+            {% endfor %}
+        {% endif %}
+        
+
+    </div>    
+</div>

@@ -1,0 +1,33 @@
+<div class="card-img">
+    <div data-cue="slideInLeft" data-delay="100">
+        {% if include.img %}
+        <img src="{{include.img}}" alt="{include.alt}" />
+        {% else %}
+        <div class="circle"></div>
+        {% endif %}
+    </div>
+    <div data-cue="slideInLeft" data-delay="500">
+        {% if include.title %}
+        <h3 class="mb-15">{{include.title}}</h3>
+        {% endif %}
+
+        {% if include.text %}
+        {{include.text}}
+        {% endif %}
+
+        {% if include.entry2 %}
+            {% for thing in include.entry2 %}
+                <p class=""> {{thing}} </p>
+            {% endfor %}
+        {% endif %}
+
+        {% if include.puntos %}
+        <span class="puntuacion"><span class="puntos" style="width:{{include.puntos}}%"></span></span>
+        {% endif %}
+
+        {% if include.link %}
+        <a class="display-block" href="{{include.link}}">Ver más sobre {{include.title}} </a>
+        {% endif %}
+
+    </div>
+</div>

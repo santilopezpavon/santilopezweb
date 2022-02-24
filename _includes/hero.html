@@ -1,0 +1,16 @@
+<section class="pos-rel  hero">
+    <div class="content-inside">
+        {% if include.imagetitle %}
+            <img style="max-width: 8rem;" src="{{include.imagetitle}}" alt="{{include.imagetitlealt}}" />
+        {% endif %}
+        <h1 class="text-uppercase mb-15 fs-8 ">
+            {{include.titlepage}}
+        </h1>
+        <p class="subtitle" data-cue="slideInLeft" data-delay="500">
+            {{include.subtitlepage}}
+        </p>
+    </div>
+    <div id="particles-js"></div>
+    <a href="#main" class="arrow down">Down</a>
+</section>
+<div class="container border-bottom separator"></div>

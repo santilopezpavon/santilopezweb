@@ -1,0 +1,45 @@
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "En mis ratos libres me gusta investigar, hacer pruebas conceptuales o hacer pequeñas librerías para poner en practica lo que investigo." %}
+{%
+    include titular.html 
+    title="Investigación Personal"
+    subtitle="Investigación" 
+    entry2=entryArray 
+%}
+
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "Me empezó a llamar la atención el mundo de la Inteligencia Artificial, concretamente las <strong>Redes Neuronales</strong> (Aprendizaje profundo, Deep Learning)." %}
+{% assign entryArray = entryArray | push: "Si quieres saber más sobre mi relación con el Machine Learning pulsa en el siguiente enlace." %}
+
+<div class="mb-30">
+{%
+    include blockWithImg.html
+    title="Machine Learning"   
+    entry2=entryArray
+    link="/machine-learning/"
+%}
+</div>
+
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "De rebote a mi interés con el Deep Learning me interesé por la Ciencia de Datos, areas de conocimiento que están muy relacionadas." %}
+
+
+<div class="mb-30">
+{%
+    include blockWithImg.html
+    alt="Drupal"
+    title="Ciencia de Datos"
+    entry2=entryArray%}
+</div>
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "Todo mi trabajo de investigación mayormente lo desenvuelvo a través de Node JS, porque me gusta JavaScript." %}
+
+<div class="mb-30">
+    {%
+        include blockWithImg.html
+        alt="Drupal"
+        title="Node JS"
+        entry2=entryArray%}
+
+</div>
+    

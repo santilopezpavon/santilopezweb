@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>{{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    {% include blocs/email.html %}
+    {% include blocs/menu.html %}
+    <section>
+        <header>
+
+
+            {% include
+            hero2.html
+            imagetitlealt=page.imagetitlealt
+            imagetitle=page.imagetitle
+            subtitlepage=page.subtitlepage
+            titlepage=page.titlepage
+            %}
+            {% include breadCrumb.html %}
+        </header>
+
+        <main id="main" class="body">
+            <div class="container">
+                {{content}}
+            </div>
+        </main>
+    </section>
+
+    <script>
+        function openMenu() {
+            var body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>

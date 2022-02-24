@@ -1,0 +1,13 @@
+<section class="pos-rel hero-2 border-bottom mb-15">
+    <div class="content-inside container">
+        {% if include.imagetitle %}
+            <img style="max-width: 8rem;" src="{{include.imagetitle}}" alt="{{include.imagetitlealt}}" />
+        {% endif %}
+        <h1 class="text-uppercase mb-15 fs-8 ">
+            {{include.titlepage}}
+        </h1>
+        <p class="subtitle" data-cue="slideInLeft" data-delay="500">
+            {{include.subtitlepage}}
+        </p>
+    </div>
+</section>

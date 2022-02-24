@@ -1,0 +1,57 @@
+
+{% assign entryArray = "" | split: ',' %}
+{% assign entryArray = entryArray | push: "" %}
+
+{%
+    include titular.html 
+    title="Mi Experiencia laboral"
+    subtitle="Experiencia profesional"
+    entry2=entryArray
+%}
+{% include blocktextdata.html 
+    ocupacion="Desarrollador Web Drupal y Next JS" 
+    fechas="2015 - Actualidad" 
+    empresa="Drauta / Seidor Consulting"
+    functiones="
+        Desarrollar proyectos web en Drupal frontend y backend.<br/>
+        Creación de módulos Drupal. <br/>
+        Desarrollo de frontales con Next JS.
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Desarrollador Web Wordpress" 
+    fechas="2014 - 2015" 
+    empresa="Pardebits"
+    functiones="
+        Desarrollar pequeños proyectos web en Wordpress.
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Delineante" 
+    fechas="2011" 
+    empresa="Ajuntament de Mataró"
+    functiones="
+        Delineante de planes de auto protección. 
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Reposición y cajas" 
+    fechas="2009 - 2011" 
+    empresa="Varios trabajos de verano"
+    functiones="
+        Reposición y cajas. 
+    "
+%}
+
+{% include blocktextdata.html 
+    ocupacion="Delineante de ICT" 
+    fechas="2006 - 2008" 
+    empresa="Serfin RVSL"
+    functiones="
+        Grafiar sobre plano la instalación de telecomunicaciones en viviendas de nueva construcción y reformas.
+    "
+%}
+

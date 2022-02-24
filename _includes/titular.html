@@ -1,0 +1,21 @@
+<div class="mb-50">
+
+    {% if include.subtitle %}
+    <p data-cue="slideInLeft" data-delay="100" class="subtitle color-third mb-20">{{include.subtitle}}</p>
+    {% endif %}
+
+    {% if include.title %}
+    <h2 data-cue="slideInLeft" data-delay="300" class="mb-40 ">{{include.title}}</h2>
+    {% endif %}
+
+    {% if include.entry %}
+    <p data-cue="slideInLeft" data-delay="400">{{include.entry}}</p>
+    {% endif %}
+
+
+    {% if include.entry2 %}
+        {% for thing in include.entry2 %}
+            <p class=""> {{thing}} </p>
+        {% endfor %}
+    {% endif %}
+</div>
