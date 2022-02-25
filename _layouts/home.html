@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{site.baseurl}}//assets/css/reset.css">
-    <link rel="stylesheet" href="{{site.baseurl}}//assets/css/style.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/reset.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
 </head>
 
 <body>
     {% include blocs/email.html %}
+    {% if false %}
     {% include blocs/menu.html %}
+    {% endif %}
     <section>
         <header>
             {%
@@ -53,7 +55,7 @@
     </section>
 
 
-    <script src="{{site.baseurl}}//js/particles.min.js"></script>
+    <script src="{{site.baseurl}}/js/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', '{{site.baseurl}}/js/particles.json', function () {
             console.log('callback - particles.js config loaded');

@@ -13,6 +13,6 @@ permalink: /drupal/
 ## ¿Qué es Drupal?
 Drupal es un CMS muy flexible que permite hacer proyectos webs eficientes y escalables.
 <ul>
-    <li><a href="{% link articulos/drupal/processors-search-api.md %}">Processors Search Api</a></li>
+    <li><a href="{{site.baseurl}}{% link articulos/drupal/processors-search-api.md %}">Processors Search Api</a></li>
 </ul>
 

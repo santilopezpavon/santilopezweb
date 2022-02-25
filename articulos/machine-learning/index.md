@@ -20,14 +20,14 @@ Me parecía interesante crear un **algoritmo genérico** que imitase el funciona
 
 ## Mis proyectos personales públicos de Machine Learning
 
-- **Red Neuronal en JavaScript**: Proyecto en el cual me introduje a conocer el funcionamiento de las redes neuronales más en profundidad.  [Neural Network](https://github.com/snt1986/neural-network).
+- **Red Neuronal en JavaScript**: Proyecto en el cual me introduje a conocer el funcionamiento de las redes neuronales más en profundidad.  [Neural Network](https://github.com/snt1986/neural-network){:target="_blank"}.
 
 
 
 
 ## Lecturas que recomiendo sobre Machine Learning
 ### Libros de interés
-- [Make Your Own Neural Network](https://www.amazon.es/Make-Your-Own-Neural-Network/dp/1530826608)
-- [Redes Neuronales de Fernando Berzal](https://www.amazon.es/Redes-Neuronales-Learning-Fernando-Berzal/dp/1731265387)
+- [Make Your Own Neural Network](https://www.amazon.es/Make-Your-Own-Neural-Network/dp/1530826608){:target="_blank"}
+- [Redes Neuronales de Fernando Berzal](https://www.amazon.es/Redes-Neuronales-Learning-Fernando-Berzal/dp/1731265387){:target="_blank"}
 
 
