@@ -7,13 +7,16 @@ $terciariColor: #50bdc5;
 
 $width: 1200px;
 $width2: 991px;
-
+$width3: 669px;
 /* BASES */
 html {
     font-size: 10px;
     font-family: "Barlow", sans-serif;
     background-color: #0D3A58;
     scroll-behavior: smooth;
+    @media(max-width: $width3) {
+        font-size: 8px;
+    }
 }
 body {
     font-size: 2rem;
@@ -138,8 +141,8 @@ h3 {
     margin-bottom: 6rem; */
     @media(max-width: $width) {
         width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 .border-bottom {
