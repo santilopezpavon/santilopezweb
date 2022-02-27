@@ -554,9 +554,13 @@ ul {
 
 nav {
     position: fixed;
-    width: 300px;
+    width: 400px;
+    left: -400px;
+    @media(max-width: 500px) {
+        width: 300px;
+        left: -300px;
+    }
     height: 100%;
-    left: -300px;
     z-index: 9;
     transition: 0.5s;
     padding: 10rem 5rem 5rem 5rem;
@@ -576,10 +580,13 @@ body.open-menu {
         left: 0;
     }
     button.menu {
-        left: calc(235px - 2rem);
+        left: calc(325px - 2rem);
         border: 1px solid $primaryColor;
-    background-color: $secondaryColor;
-    color: $primaryColor;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        @media(max-width: 500px) {
+            left: calc(235px - 2rem);
+        }
     }
 }
 
