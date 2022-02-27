@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "Hola soy la home"
+title: "Santi López - Desarrollador Web"
 titlepage: "Santi López"
 subtitlepage: "Web Developer"
 ---
