@@ -24,6 +24,8 @@ body {
     font-size: 2.6rem;
     line-height: 1.3;
     overflow-x: hidden;
+
+    
     p {
         margin-bottom: 2rem;
     }
@@ -98,6 +100,8 @@ a {
     align-items: center;
     text-align: left;
     background-color: #50bdc5;
+    padding-top: 4rem;
+    padding-bottom: 1rem!important;
 }
 
 h1,h2,h3,h4 {
@@ -133,6 +137,7 @@ h3 {
 
 .container {
     width: 80%;
+    max-width: 1500px;
     display: block;
     margin: auto;
     box-sizing: border-box;
@@ -207,6 +212,12 @@ ul {
         line-height: 1;
 
     }
+    img {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+    padding-bottom: 3rem;
 }
 /* PARTICLES */
 #particles-js {
