@@ -669,3 +669,20 @@ button.menu, .button {
         }
     }
 }
+
+@media(max-width: $width2) {
+    .card-img {
+       >  div:first-of-type{
+        width: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+        }
+        .circle 
+         {
+            height: 2rem;
+            width: 2rem!important;
+        }
+    }
+    
+    
+}
