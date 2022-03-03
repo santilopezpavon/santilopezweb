@@ -13,7 +13,7 @@ permalink: /global-tools/git
 ## ¿Qué es GIT ?
 GIT es un **sistema de control de versiones distribuido**. 
 
-Un sistema de control de versiones rastrea y registra los cambios que se hacen a lo largo de la vida del proyecto, así podemos saber qué cambios se han hecho, cuándo se han hecho y quién los ha hecho. 
+Un sistema de control de versiones rastrea y registra los cambios que se hacen a lo largo de la vida del proyecto, así podemos saber qué cambios se han hecho, cuándo se han hecho y quién los ha hecho. También podemos volver a versiones anteriores.
 
 
 
